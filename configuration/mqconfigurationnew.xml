@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<broker xmlns="http://activemq.apache.org/schema/core">
+  <destinationPolicy>
+    <policyMap>
+      <policyEntries>
+        <policyEntry topic="&gt;">
+          <pendingMessageLimitStrategy>
+            <constantPendingMessageLimitStrategy limit="5000"/>
+          </pendingMessageLimitStrategy>
+        </policyEntry>
+      </policyEntries>
+    </policyMap>
+  </destinationPolicy>
+  <plugins>
+  </plugins>
+</broker>
